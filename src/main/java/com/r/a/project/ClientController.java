@@ -19,6 +19,7 @@ public class ClientController {
     @Autowired
     ClientRepository clients;
 
+    ///Add client
     @RequestMapping(path = "/add_client.json", method = RequestMethod.POST)
     public Client addClient(@RequestBody Client client) {
 
