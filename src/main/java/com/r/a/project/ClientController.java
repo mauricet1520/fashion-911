@@ -27,7 +27,7 @@ public class ClientController {
 
         client = new Client(client.getFirstName(), client.getLastName(), client.getAddress(), client.getEmail(), client.getPhoneNumber(),
                 client.getHeight(), client.getSize(), client.getBodyType(), client.getEventType(), client.getColorsLiked(), client.getColorsDisliked(),
-                client.getZipCode(), client.getCity(), client.getState(),java.sql.Timestamp.valueOf(LocalDateTime.of(2017, Month.from(Month.APRIL), 2, 1, 5)), client.getImage());
+                client.getZipCode(), client.getCity(), client.getState(),client.getTimestamp(), client.getImage());
 
         clients.save(client);
         return client;
